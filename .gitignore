@@ -1,0 +1,10 @@
+# Dependencies and build output
+**/node_modules/
+**/dist/
+
+# Environment and generated runtime files
+**/.env
+*.log
+
+# Nested legacy repository
+Coeta/
