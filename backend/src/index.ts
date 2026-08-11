@@ -43,6 +43,11 @@ app.get('/api/health', (req, res) => {
   });
 });
 
+// Root route: redirect to health check for simple browser access
+app.get('/', (req, res) => {
+  res.redirect('/api/health');
+});
+
 // API Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
